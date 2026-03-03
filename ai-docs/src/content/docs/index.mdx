@@ -1,0 +1,37 @@
+---
+title: AI Documentation
+description: Central knowledge base for AI projects.
+template: splash
+hero:
+  tagline: Hard-edged knowledge for soft-ware engineers.
+  image:
+    file: ../../assets/SDD_prev.jpg
+  actions:
+    - text: Read the Guides
+      link: /guides/getting-started/
+      icon: right-arrow
+      variant: primary
+    - text: View API
+      link: /reference/api/
+      icon: external
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+import sddPrev from '../../assets/SDD_prev.jpg';
+
+## Capabilities
+<img src={sddPrev.src} alt="SDD" width="400" height="400" />
+<CardGrid stagger>
+	<Card title="Docs-as-Code" icon="pencil">
+		Edit markdown files, push to git. No CMS required.
+	</Card>
+	<Card title="Fast & Static" icon="rocket">
+		Built with Astro. Zero JS by default.
+	</Card>
+	<Card title="Brutalist Design" icon="setting">
+		High contrast, no border-radius, hard shadows.
+	</Card>
+	<Card title="Searchable" icon="magnifier">
+		Instant search powered by Pagefind.
+	</Card>
+</CardGrid>
